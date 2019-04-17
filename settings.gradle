@@ -1,0 +1,1 @@
+include ':app', ':cv34-java', ':cv32-java', ':cv32-native', ':cv34-native'
