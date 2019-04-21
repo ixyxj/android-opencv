@@ -1,7 +1,6 @@
 package com.ixyxj.opencv.samples
 
 import android.app.Application
-import org.opencv.android.OpenCVLoader
 
 /**
  * For more information, you can visit https://github.com/ixyxj,
@@ -13,6 +12,5 @@ class App: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        OpenCVLoader.initDebug()
     }
 }

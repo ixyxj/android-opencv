@@ -3,11 +3,9 @@ package com.ixyxj.opencv.samples;
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.os.Environment
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
-import org.opencv.imgcodecs.Imgcodecs
 
 /**
  * For more information, you can visit https://github.com/ixyxj,
@@ -44,7 +42,5 @@ class ExcelParsingActivity: AppCompatActivity() {
 
     private fun initExcelParsing() {
         //灰度图片
-        val mat = Imgcodecs.imread("${Environment.getExternalStorageDirectory()}/0test/excel.png", 1)
-        mat.
     }
 }
