@@ -15,7 +15,7 @@ import android.support.v7.app.AppCompatActivity
  * Copyright (c) 2019 in FORETREE
  */
 class ExcelParsingActivity: AppCompatActivity() {
-    private val CODE_REQUEST_WRITE_PERMISSION = 110;
+    private val CODE_REQUEST_WRITE_PERMISSION = 110
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

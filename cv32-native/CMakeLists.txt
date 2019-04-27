@@ -14,12 +14,8 @@ set(opencv_include_dir src/main/cpp/include)
 include(AndroidNdkGdb)
 include(AndroidNdkModules)
 include_directories( ${opencv_include_dir} )
-add_library( opencv_java3
-             SHARED
-             IMPORTED )
-set_target_properties( opencv_java3
-                       PROPERTIES IMPORTED_LOCATION
-                       libs/${ANDROID_ABI}/libopencv_java3.so )
+add_library( opencv_java3 SHARED IMPORTED )
+set_target_properties( opencv_java3 PROPERTIES IMPORTED_LOCATION ${PROJECT_SOURCE_DIR}libs/${ANDROID_ABI}/libopencv_java3.so )
 set( SRC_LIST )
 aux_source_directory(${CPP_DIR} CPP_SRC_LIST)
 aux_source_directory(${CPP_DIR}/cutout CUT_SRC_LIST)
